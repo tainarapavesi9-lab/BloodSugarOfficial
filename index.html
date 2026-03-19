@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-PT">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
@@ -17,7 +17,7 @@
 
     <!-- UI Frameworks & Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Lexend:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Lexend:wght@400;500;600;700;800;900&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
 
     <style>
@@ -26,7 +26,6 @@
             --indigo-brand: #433D8B;
             --purple-accent: #2E236C;
             --bg-body: #EEEDF9; 
-            --accent-glow: rgba(67, 61, 139, 0.15);
         }
 
         body { 
@@ -39,6 +38,7 @@
         }
 
         h1, h2, h3, .font-heading { font-family: 'Lexend', sans-serif; }
+        .font-script { font-family: 'Dancing Script', cursive; }
 
         .geo-bg {
             position: fixed;
@@ -93,7 +93,6 @@
             transition: all 0.4s ease;
         }
 
-        /* Mesclagem de imagem otimizada */
         .blend-img {
             max-width: 100%;
             height: auto;
@@ -135,7 +134,6 @@
             font-weight: 800;
             color: var(--midnight);
             text-transform: uppercase;
-            letter-spacing: 0.05em;
         }
         .faq-answer {
             max-height: 0;
@@ -167,8 +165,8 @@
 
         .text-aggro {
             text-transform: uppercase;
-            letter-spacing: -0.02em;
-            line-height: 0.9;
+            letter-spacing: -0.04em;
+            line-height: 0.85;
         }
     </style>
 </head>
@@ -193,75 +191,76 @@
                 
                 <!-- ÁREA DE CONTEÚDO -->
                 <div class="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left">
-                    <div class="inline-flex items-center gap-3 bg-white border border-indigo-100 px-5 py-2.5 rounded-full mb-10 shadow-sm">
-                        <span class="h-2.5 w-2.5 rounded-full bg-indigo-600 animate-pulse"></span>
-                        <span class="text-[12px] font-black text-indigo-900 uppercase tracking-[0.2em]">BEM-ESTAR BIO-CELULAR 2026</span>
-                    </div>
+                    
+                    <!-- Pegada Manuscrita -->
+                    <span class="font-script text-indigo-700 text-3xl lg:text-5xl mb-2 block">Support Healthy</span>
 
-                    <h1 class="text-5xl lg:text-[104px] font-black text-slate-900 text-aggro mb-12">
-                        APOIE O AÇÚCAR <br/> 
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-700 to-purple-600">NO SANGUE</span> <br/>
-                        <span class="text-indigo-900">NATURALMENTE</span>
+                    <h1 class="text-6xl lg:text-[115px] font-black text-slate-900 text-aggro mb-6">
+                        BLOOD SUGAR
                     </h1>
 
-                    <!-- Lista de Benefícios (Inspirada no upload) -->
-                    <div class="space-y-4 mb-12 w-full max-w-lg">
-                        <div class="flex items-center gap-4 bg-white/60 p-4 rounded-2xl border border-white/40 shadow-sm transform hover:scale-105 transition-transform duration-300">
-                            <div class="bg-indigo-900 p-2 rounded-full text-white"><i data-feather="droplet" class="w-5 h-5"></i></div>
+                    <div class="mb-12">
+                        <span class="bg-indigo-950 text-white font-black px-8 py-3 rounded-2xl text-2xl lg:text-4xl tracking-widest uppercase">NATURALLY</span>
+                    </div>
+
+                    <!-- Lista de Benefícios (Fiel ao upload) -->
+                    <div class="space-y-4 mb-14 w-full max-w-lg">
+                        <div class="flex items-center gap-4 bg-white/60 p-5 rounded-2xl border border-white/40 shadow-sm transition-all hover:bg-white/90">
+                            <div class="bg-indigo-900 p-2 rounded-full text-white shadow-lg"><i data-feather="droplet" class="w-5 h-5"></i></div>
                             <span class="font-black text-slate-800 uppercase text-sm lg:text-base">AJUDA A REGULAR OS NÍVEIS DE GLICOSE</span>
                         </div>
-                        <div class="flex items-center gap-4 bg-white/60 p-4 rounded-2xl border border-white/40 shadow-sm transform hover:scale-105 transition-transform duration-300">
-                            <div class="bg-indigo-900 p-2 rounded-full text-white"><i data-feather="check-circle" class="w-5 h-5"></i></div>
+                        <div class="flex items-center gap-4 bg-white/60 p-5 rounded-2xl border border-white/40 shadow-sm transition-all hover:bg-white/90">
+                            <div class="bg-indigo-900 p-2 rounded-full text-white shadow-lg"><i data-feather="check-circle" class="w-5 h-5"></i></div>
                             <span class="font-black text-slate-800 uppercase text-sm lg:text-base">INGREDIENTES NATURAIS E SEGUROS</span>
                         </div>
-                        <div class="flex items-center gap-4 bg-white/60 p-4 rounded-2xl border border-white/40 shadow-sm transform hover:scale-105 transition-transform duration-300">
-                            <div class="bg-indigo-900 p-2 rounded-full text-white"><i data-feather="heart" class="w-5 h-5"></i></div>
+                        <div class="flex items-center gap-4 bg-white/60 p-5 rounded-2xl border border-white/40 shadow-sm transition-all hover:bg-white/90">
+                            <div class="bg-indigo-900 p-2 rounded-full text-white shadow-lg"><i data-feather="heart" class="w-5 h-5"></i></div>
                             <span class="font-black text-slate-800 uppercase text-sm lg:text-base">SUPORTE AO BEM-ESTAR GERAL</span>
                         </div>
                     </div>
 
-                    <!-- Foto do Produto Mobile -->
+                    <!-- Foto Mobile (Mesclada) -->
                     <div class="w-full flex justify-center lg:hidden mb-14 relative">
                         <img src="images/glycop.png" alt="GlycoPezil" class="blend-img w-full max-w-[360px] relative z-10">
                     </div>
 
-                    <!-- Copy Agressiva Compliance -->
-                    <p class="text-xl lg:text-2xl text-slate-600 mb-12 lg:mb-16 leading-tight max-w-xl font-bold tracking-tight px-2 lg:px-0 uppercase">
-                        GLYCOPEZIL™ OFERECE UMA ABORDAGEM REFINADA E PODEROSA PARA MANTER O EQUILÍBRIO DO SEU CORPO. FEITO PARA QUEM EXIGE PERFORMANCE E SAÚDE.
+                    <!-- Copy Agressiva -->
+                    <p class="text-xl lg:text-3xl text-slate-700 mb-12 lg:mb-16 leading-none max-w-xl font-black px-2 lg:px-0 uppercase italic">
+                        GLYCOPEZIL™: A FÓRMULA SUPREMA PARA MANTER O EQUILÍBRIO METABÓLICO QUE O SEU CORPO EXIGE EM 2026.
                     </p>
 
                     <!-- CTAs -->
                     <div class="flex flex-col sm:flex-row gap-6 w-full lg:w-auto">
                         <a href="https://mwebora.com/12000/1227/7/?" class="cta-btn-main text-white px-12 py-7 lg:px-14 lg:py-8 rounded-[3rem] font-black text-center flex flex-col items-center justify-center group">
-                            <span class="flex items-center gap-3 text-2xl lg:text-3xl uppercase">PEDIR AGORA E ECONOMIZAR <i data-feather="shopping-bag" class="w-7 h-7"></i></span>
+                            <span class="flex items-center gap-3 text-2xl lg:text-4xl uppercase">QUERO GARANTIR O MEU <i data-feather="shopping-bag" class="w-8 h-8"></i></span>
                             <span class="text-[11px] opacity-80 font-bold uppercase tracking-[0.2em] mt-2">CHECKOUT OFICIAL E SEGURO</span>
                         </a>
                         
                         <a href="https://mwebora.com/12000/1227/3/?" class="cta-btn-video px-12 py-7 lg:px-14 lg:py-8 rounded-[3rem] font-black text-center flex flex-col items-center justify-center group shadow-sm">
-                            <span class="flex items-center gap-3 text-2xl lg:text-3xl uppercase">VER APRESENTAÇÃO <i data-feather="play-circle" class="w-7 h-7 text-[#433D8B]"></i></span>
-                            <span class="text-[11px] text-slate-400 font-bold uppercase tracking-[0.2em] mt-2">VÍDEO EXCLUSIVO</span>
+                            <span class="flex items-center gap-3 text-2xl lg:text-4xl uppercase">VER VÍDEO <i data-feather="play-circle" class="w-8 h-8 text-[#433D8B]"></i></span>
+                            <span class="text-[11px] text-slate-400 font-bold uppercase tracking-[0.2em] mt-2">APRESENTAÇÃO EXCLUSIVA</span>
                         </a>
                     </div>
 
-                    <!-- Barra de Confiança -->
-                    <div class="mt-20 lg:mt-24 flex flex-wrap items-center gap-x-10 lg:gap-x-16 gap-y-8 opacity-60 justify-center lg:justify-start w-full">
+                    <!-- Trust Bar -->
+                    <div class="mt-20 flex flex-wrap items-center gap-x-10 lg:gap-x-16 gap-y-8 opacity-60 justify-center lg:justify-start w-full">
                         <div class="flex items-center gap-3"><i data-feather="shield" class="w-5 h-5"></i><span class="text-[11px] font-black uppercase">QUALIDADE GMP</span></div>
                         <div class="flex items-center gap-3"><i data-feather="map-pin" class="w-5 h-5"></i><span class="text-[11px] font-black uppercase">ORIGEM EUA</span></div>
-                        <div class="flex items-center gap-3"><i data-feather="refresh-cw" class="w-5 h-5"></i><span class="text-[11px] font-black uppercase">GARANTIA 60 DIAS</span></div>
+                        <div class="flex items-center gap-3"><i data-feather="refresh-cw" class="w-5 h-5"></i><span class="text-[11px] font-black uppercase">60 DIAS DE GARANTIA</span></div>
                     </div>
                 </div>
 
-                <!-- Foto no Desktop -->
+                <!-- Foto Desktop (Mesclada) -->
                 <div class="hidden lg:flex lg:col-span-5 justify-center relative">
-                    <div class="absolute inset-0 bg-indigo-500/10 blur-[100px] rounded-full"></div>
-                    <img src="images/glycop.png" alt="GlycoPezil" class="blend-img w-full lg:max-w-[700px] relative z-10">
+                    <div class="absolute inset-0 bg-indigo-500/5 blur-[120px] rounded-full"></div>
+                    <img src="images/glycop.png" alt="GlycoPezil" class="blend-img w-full lg:max-w-[800px] relative z-10">
                 </div>
 
             </div>
         </section>
 
         <!-- Marquee de Reviews -->
-        <section class="pb-32 bg-white/30 py-20">
+        <section class="pb-32 bg-white/20 py-20">
             <div class="max-w-7xl mx-auto px-6 text-center mb-12">
                 <div class="flex justify-center gap-1.5 stars-gold mb-6">
                     <i data-feather="star" class="w-6 h-6 fill-current"></i>
@@ -270,47 +269,36 @@
                     <i data-feather="star" class="w-6 h-6 fill-current"></i>
                     <i data-feather="star" class="w-6 h-6 fill-current"></i>
                 </div>
-                <h3 class="text-indigo-900 font-black uppercase tracking-[0.4em] text-lg">RESULTADOS REAIS DE QUEM USA</h3>
+                <h3 class="text-indigo-900 font-black uppercase tracking-[0.5em] text-xl">RESULTADOS REAIS</h3>
             </div>
             
             <div class="marquee-container">
                 <div class="marquee-content">
                     <div class="review-card">
                         <div class="flex justify-between items-start mb-6"><div class="stars-gold font-bold">★★★★★</div><div class="verified-badge">Compra Verificada</div></div>
-                        <p class="text-[17px] font-bold text-slate-800 italic mb-6 leading-tight uppercase">"O MELHOR SUPORTE QUE JÁ USEI. FINALMENTE ENCONTREI O EQUILÍBRIO QUE BUSCAVA HÁ ANOS. ALTAMENTE RECOMENDADO!"</p>
+                        <p class="text-[18px] font-black text-slate-800 italic mb-6 leading-tight uppercase">"O MELHOR SUPORTE QUE JÁ USEI. FINALMENTE ENCONTREI O EQUILÍBRIO QUE BUSCAVA HÁ ANOS. ALTAMENTE RECOMENDADO!"</p>
                         <div class="text-[14px] font-black text-slate-900 uppercase tracking-tight">— ROBERT M., NOVA YORK</div>
                     </div>
                     <div class="review-card">
                         <div class="flex justify-between items-start mb-6"><div class="stars-gold font-bold">★★★★★</div><div class="verified-badge">Compra Verificada</div></div>
-                        <p class="text-[17px] font-bold text-slate-800 italic mb-6 leading-tight uppercase">"ENVIO RÁPIDO E QUALIDADE EXTREMA. NOTEI A DIFERENÇA NAS PRIMEIRAS SEMANAS. VALE CADA CENTAVO."</p>
+                        <p class="text-[18px] font-black text-slate-800 italic mb-6 leading-tight uppercase">"ENVIO RÁPIDO E QUALIDADE EXTREMA. NOTEI A DIFERENÇA NAS PRIMEIRAS SEMANAS. VALE CADA CÊNTIMO."</p>
                         <div class="text-[14px] font-black text-slate-900 uppercase tracking-tight">— SARAH L., LOS ANGELES</div>
                     </div>
                     <div class="review-card">
                         <div class="flex justify-between items-start mb-6"><div class="stars-gold font-bold">★★★★★</div><div class="verified-badge">Compra Verificada</div></div>
-                        <p class="text-[17px] font-bold text-slate-800 italic mb-6 leading-tight uppercase">"TRANSPARÊNCIA TOTAL. UMA MARCA QUE REALMENTE ENTREGA O QUE PROMETE. MUITO SATISFEITO COM O SUPORTE."</p>
+                        <p class="text-[18px] font-black text-slate-800 italic mb-6 leading-tight uppercase">"TRANSPARÊNCIA TOTAL. UMA MARCA QUE REALMENTE ENTREGA O QUE PROMETE. MUITO SATISFEITO COM O SUPORTE."</p>
                         <div class="text-[14px] font-black text-slate-900 uppercase tracking-tight">— JAMES T., CHICAGO</div>
-                    </div>
-                    <div class="review-card">
-                        <div class="flex justify-between items-start mb-6"><div class="stars-gold font-bold">★★★★★</div><div class="verified-badge">Compra Verificada</div></div>
-                        <p class="text-[17px] font-bold text-slate-800 italic mb-6 leading-tight uppercase">"ESTOU NO TERCEIRO MÊS E OS RESULTADOS SÃO CONSISTENTES. MUDOU MINHA VITALIDADE DIÁRIA COMPLETAMENTE."</p>
-                        <div class="text-[14px] font-black text-slate-900 uppercase tracking-tight">— JESSICA F., HOUSTON</div>
-                    </div>
-                    <!-- Duplicado para o loop -->
-                    <div class="review-card">
-                        <div class="flex justify-between items-start mb-6"><div class="stars-gold font-bold">★★★★★</div><div class="verified-badge">Compra Verificada</div></div>
-                        <p class="text-[17px] font-bold text-slate-800 italic mb-6 leading-tight uppercase">"O MELHOR SUPORTE QUE JÁ USEI. FINALMENTE ENCONTREI O EQUILÍBRIO QUE BUSCAVA HÁ ANOS."</p>
-                        <div class="text-[14px] font-black text-slate-900 uppercase tracking-tight">— ROBERT M., NOVA YORK</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SEÇÃO FAQ (COMPLETO) -->
-        <section class="py-24 lg:py-40 relative bg-white/50">
+        <!-- SEÇÃO FAQ (COMPLETO E AGRESSIVO) -->
+        <section class="py-24 lg:py-40 relative">
             <div class="max-w-4xl mx-auto px-6">
                 <div class="text-center mb-20 lg:mb-28">
-                    <h2 class="text-5xl lg:text-8xl font-black text-slate-900 mb-8 text-aggro">PERGUNTAS <br/> <span class="text-indigo-700">FREQUENTES</span></h2>
-                    <p class="text-xl text-slate-500 font-bold uppercase tracking-widest">CLAREZA E CIÊNCIA PARA VOCÊ</p>
+                    <h2 class="text-5xl lg:text-9xl font-black text-slate-900 mb-8 text-aggro">RESPOSTAS <br/> <span class="text-indigo-700">RÁPIDAS</span></h2>
+                    <p class="text-xl text-slate-500 font-black uppercase tracking-widest italic">TUDO O QUE PRECISAS DE SABER AGORA</p>
                 </div>
 
                 <div class="space-y-6">
@@ -319,18 +307,18 @@
                             <span>COMO DEVO USAR O GLYCOPEZIL™?</span>
                             <i data-feather="plus" class="faq-icon w-6 h-6 text-slate-400"></i>
                         </div>
-                        <div class="faq-answer font-bold uppercase">
-                            <p>PARA RESULTADOS OTIMIZADOS, TOME UMA DOSE DIÁRIA COM UM COPO CHEIO DE ÁGUA, PREFERENCIALMENTE 20-30 MINUTOS ANTES DA SUA PRIMEIRA REFEIÇÃO.</p>
+                        <div class="faq-answer font-black uppercase text-sm lg:text-base leading-tight">
+                            <p>PARA RESULTADOS MÁXIMOS, TOMA UMA DOSE DIÁRIA COM UM COPO CHEIO DE ÁGUA, IDEALMENTE 20-30 MINUTOS ANTES DA TUA PRIMEIRA REFEIÇÃO DO DIA.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" onclick="toggleFaq(this)">
                         <div class="faq-question">
-                            <span>O PRODUTO POSSUI GARANTIA?</span>
+                            <span>O PRODUTO TEM GARANTIA REAL?</span>
                             <i data-feather="plus" class="faq-icon w-6 h-6 text-slate-400"></i>
                         </div>
-                        <div class="faq-answer font-bold uppercase">
-                            <p>SIM. PROTEGEMOS SUA DECISÃO COM UMA GARANTIA INCONDICIONAL DE REEMBOLSO DE 60 DIAS. SE NÃO ESTIVER 100% SATISFEITO, BASTA ENTRAR EM CONTATO.</p>
+                        <div class="faq-answer font-black uppercase text-sm lg:text-base leading-tight">
+                            <p>SIM. PROTEGEMOS A TUA DECISÃO COM UMA GARANTIA INCONDICIONAL DE REEMBOLSO DE 60 DIAS. SE NÃO ESTIVERES 100% SATISFEITO, DEVOLVEMOS O TEU DINHEIRO SEM PERGUNTAS.</p>
                         </div>
                     </div>
 
@@ -339,18 +327,18 @@
                             <span>OS INGREDIENTES SÃO SEGUROS?</span>
                             <i data-feather="plus" class="faq-icon w-6 h-6 text-slate-400"></i>
                         </div>
-                        <div class="faq-answer font-bold uppercase">
-                            <p>SIM. NOSSA FÓRMULA É COMPOSTA POR INGREDIENTES NATURAIS DE ALTA QUALIDADE, PROCESSADOS EM UMA INSTALAÇÃO CERTIFICADA NOS EUA SEGUINDO NORMAS RIGOROSAS.</p>
+                        <div class="faq-answer font-black uppercase text-sm lg:text-base leading-tight">
+                            <p>SIM. A NOSSA FÓRMULA É COMPOSTA POR INGREDIENTES NATURAIS DE GRAU CLÍNICO, PROCESSADOS EM INSTALAÇÕES CERTIFICADAS NOS EUA SOB AS NORMAS MAIS RÍGIDAS DE QUALIDADE.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" onclick="toggleFaq(this)">
                         <div class="faq-question">
-                            <span>QUAL O PRAZO DE ENTREGA?</span>
+                            <span>QUAL O PRAZO DE ENVIO?</span>
                             <i data-feather="plus" class="faq-icon w-6 h-6 text-slate-400"></i>
                         </div>
-                        <div class="faq-answer font-bold uppercase">
-                            <p>PROCESSAMOS AS ORDENS EM ATÉ 24 HORAS. O PRAZO DE ENTREGA VARIA CONFORME A SUA LOCALIZAÇÃO, MAS GERALMENTE OCORRE EM ALGUNS DIAS ÚTEIS.</p>
+                        <div class="faq-answer font-black uppercase text-sm lg:text-base leading-tight">
+                            <p>PROCESSAMOS AS ORDENS EM ATÉ 24 HORAS ÚTEIS. O TEMPO DE ENTREGA VARIA CONFORME A TUA LOCALIZAÇÃO, MAS TRABALHAMOS COM OS ENVIOS MAIS RÁPIDOS DO MERCADO.</p>
                         </div>
                     </div>
                 </div>
@@ -366,8 +354,8 @@
                     <div class="flex items-center justify-center lg:justify-start mb-12">
                         <span class="font-heading font-black text-4xl text-white tracking-tighter uppercase">GLYCOPEZIL</span>
                     </div>
-                    <p class="text-lg leading-tight mb-14 max-w-sm mx-auto lg:mx-0 text-slate-400 font-bold uppercase">
-                        PIONEIRISMO EM BEM-ESTAR METABÓLICO ATRAVÉS DE INGREDIENTES NATURAIS DE GRAU CLÍNICO.
+                    <p class="text-lg leading-tight mb-14 max-w-sm mx-auto lg:mx-0 text-slate-400 font-black uppercase italic">
+                        LIDERANDO A REVOLUÇÃO DO BEM-ESTAR METABÓLICO COM CIÊNCIA NATURAL DE ELITE.
                     </p>
                     <div class="space-y-3">
                         <div class="text-[12px] font-black uppercase tracking-[0.5em] text-slate-800">SUPORTE AO CLIENTE</div>
@@ -377,7 +365,7 @@
 
                 <div class="lg:col-span-7">
                     <div class="bg-white/5 rounded-[3rem] p-12 border border-white/10">
-                        <p class="text-[12px] leading-relaxed italic text-slate-500 text-justify uppercase font-bold">
+                        <p class="text-[12px] leading-relaxed italic text-slate-500 text-justify uppercase font-black">
                             <strong>AVISO FDA:</strong> ESTAS DECLARAÇÕES NÃO FORAM AVALIADAS PELA FOOD AND DRUG ADMINISTRATION. ESTE PRODUTO NÃO SE DESTINA A DIAGNOSTICAR, TRATAR, CURAR OU PREVENIR QUALQUER DOENÇA. RESULTADOS INDIVIDUAIS PODEM VARIAR. © 2026 DISTRIBUIDOR AUTORIZADO.
                         </p>
                     </div>
@@ -389,7 +377,7 @@
                     <button onclick="openModal('privacy')" class="hover:text-indigo-400 transition-colors uppercase">PRIVACIDADE</button>
                     <button onclick="openModal('terms')" class="hover:text-indigo-400 transition-colors uppercase">TERMOS</button>
                     <button onclick="openModal('returns')" class="hover:text-indigo-400 transition-colors uppercase">GARANTIA</button>
-                    <button onclick="openModal('contact')" class="hover:text-indigo-400 transition-colors uppercase">CONTATO</button>
+                    <button onclick="openModal('contact')" class="hover:text-indigo-400 transition-colors uppercase">CONTATOS</button>
                 </nav>
                 
                 <div class="flex flex-col items-center md:items-end gap-3">
@@ -411,7 +399,7 @@
                         <i data-feather="x" class="w-8 h-8 text-slate-400"></i>
                     </button>
                 </div>
-                <div class="p-12 max-h-[60vh] overflow-y-auto text-slate-600 text-lg leading-relaxed uppercase font-bold" id="modal-content"></div>
+                <div class="p-12 max-h-[60vh] overflow-y-auto text-slate-600 text-lg leading-relaxed uppercase font-black" id="modal-content"></div>
             </div>
         </div>
     </div>
@@ -426,10 +414,10 @@
         }
 
         const modalData = {
-            privacy: { title: "POLÍTICA DE PRIVACIDADE", content: "<p>SEUS DADOS SÃO PROTEGIDOS POR CRIPTOGRAFIA DE PONTA A PONTA E USADOS APENAS PARA PROCESSAMENTO DE PEDIDOS.</p>" },
-            terms: { title: "TERMOS DE USO", content: "<p>AO ADQUIRIR NOSSOS SUPLEMENTOS, VOCÊ CONCORDA COM NOSSAS DIRETRIZES DE USO RESPONSÁVEL.</p>" },
-            returns: { title: "POLÍTICA DE REEMBOLSO", content: "<p>GARANTIMOS 100% DO SEU INVESTIMENTO DE VOLTA DENTRO DO PRAZO DE 60 DIAS APÓS A COMPRA.</p>" },
-            contact: { title: "FALE CONOSCO", content: "<p>NOSSA CENTRAL DE ATENDIMENTO ESTÁ DISPONÍVEL 24/7 EM SUPPORT@CUSTOMERCS.COM.</p>" }
+            privacy: { title: "POLÍTICA DE PRIVACIDADE", content: "<p>OS TEUS DADOS SÃO PROTEGIDOS POR CRIPTOGRAFIA DE PONTA A PONTA E USADOS APENAS PARA O PROCESSAMENTO DE PEDIDOS.</p>" },
+            terms: { title: "TERMOS DE USO", content: "<p>AO ADQUIRIR OS NOSSOS SUPLEMENTOS, CONCORDAS COM AS NOSSAS DIRETRIZES DE USO RESPONSÁVEL.</p>" },
+            returns: { title: "POLÍTICA DE REEMBOLSO", content: "<p>GARANTIMOS 100% DO TEU INVESTIMENTO DE VOLTA DENTRO DO PRAZO DE 60 DIAS APÓS A COMPRA.</p>" },
+            contact: { title: "FALE CONNOSCO", content: "<p>A NOSSA CENTRAL DE APOIO ESTÁ DISPONÍVEL 24/7 ATRAVÉS DO E-MAIL SUPPORT@CUSTOMERCS.COM.</p>" }
         };
 
         function openModal(type) {
