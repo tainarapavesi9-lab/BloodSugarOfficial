@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <!-- SEO & Metadados -->
-    <title>GlycoPezil™ | Suporte Avançado ao Equilíbrio Metabólico</title>
-    <meta name="description" content="Apoie a sua saúde metabólica diária com GlycoPezil. Uma fórmula natural premium projetada para complementar a sua jornada de bem-estar.">
+    <!-- SEO & Metadata -->
+    <title>GlycoPezil™ | Elite Metabolic Protocol & Blood Balance Support</title>
+    <meta name="description" content="Master your metabolic health with GlycoPezil. An elite natural formula designed for precision blood balance and daily vitality.">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://bloodsugarofficial.vercel.app/">
 
-    <!-- FAVICON - Corrigido -->
+    <!-- FAVICON -->
     <link rel="icon" type="image/png" href="images/faviconV2.png">
     <link rel="shortcut icon" type="image/png" href="images/faviconV2.png">
 
-    <!-- Script VentroCDN -->
+    <!-- VentroCDN Script -->
     <script src="https://cdn.ventrocdn.com/code/8300-da312490-020e-4777-ae9c-368694102d15"></script>
 
-    <!-- UI Frameworks & Fontes -->
+    <!-- UI Frameworks & Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Lexend:wght@400;500;600;700;800;900&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
@@ -29,7 +29,7 @@
             --midnight: #17153B;
             --indigo-brand: #433D8B;
             --purple-accent: #2E236C;
-            --bg-body: #E4E4ED; /* Cor solicitada */
+            --bg-body: #E4E4ED; 
         }
 
         body { 
@@ -42,14 +42,11 @@
             position: relative;
         }
 
-        /* Textura de fundo para "dar um up" */
+        /* Premium Background Texture */
         body::before {
             content: "";
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            top: 0; left: 0; width: 100%; height: 100%;
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
             opacity: 0.04;
             pointer-events: none;
@@ -67,7 +64,7 @@
             pointer-events: none;
         }
 
-        /* Marquee Constante */
+        /* Continuous Marquee */
         @keyframes scroll {
             0% { transform: translateX(0); }
             100% { transform: translateX(-50%); }
@@ -122,7 +119,7 @@
         .cta-btn-main {
             background: linear-gradient(135deg, var(--midnight) 0%, var(--indigo-brand) 100%);
             transition: all 0.3s ease;
-            box-shadow: 0 10px 25px -5px rgba(67, 61, 139, 0.3);
+            box-shadow: 0 12px 24px -6px rgba(67, 61, 139, 0.3);
         }
         .cta-btn-main:hover {
             transform: translateY(-2px);
@@ -145,6 +142,7 @@
             font-weight: 700;
             color: var(--midnight);
             font-size: 0.95rem;
+            text-transform: uppercase;
         }
         .faq-answer {
             max-height: 0;
@@ -153,10 +151,10 @@
             color: #64748B;
             padding: 0 1.5rem;
             font-size: 0.85rem;
-            line-height: 1.5;
+            line-height: 1.6;
         }
         .faq-item.active .faq-answer {
-            max-height: 300px;
+            max-height: 350px;
             padding-bottom: 1.5rem;
         }
         .faq-item.active .faq-icon { transform: rotate(45deg); color: var(--indigo-brand); }
@@ -168,16 +166,13 @@
             border-radius: 99px;
             font-size: 9px;
             font-weight: 800;
-            display: flex;
-            align-items: center;
-            gap: 4px;
             text-transform: uppercase;
         }
 
         .stars-gold { color: #F59E0B; font-size: 1rem; letter-spacing: 1.5px; }
 
         @media (max-width: 768px) {
-            .hero-title { font-size: 2.5rem !important; }
+            .hero-title { font-size: 2.75rem !important; line-height: 1.1; }
             .hero-script { font-size: 1.5rem !important; }
             .badge-naturally { font-size: 1.25rem !important; padding: 0.5rem 1.25rem !important; }
             .blend-img-mobile { max-width: 260px !important; margin: 1.5rem 0; }
@@ -191,7 +186,7 @@
         <div class="absolute w-[500px] h-[500px] bg-purple-500/5 blur-[100px] rounded-full bottom-0 left-0"></div>
     </div>
 
-    <!-- Cabeçalho Centralizado -->
+    <!-- Header -->
     <header class="bg-[#0F172A] sticky top-0 z-50 border-b border-white/5 shadow-2xl">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-center items-center">
             <span class="font-heading font-black text-xl lg:text-2xl text-white tracking-tighter uppercase">GLYCOPEZIL</span>
@@ -199,11 +194,11 @@
     </header>
 
     <main>
-        <!-- Secção Hero -->
+        <!-- Hero Section -->
         <section class="relative pt-6 lg:pt-20 pb-12">
             <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 lg:gap-12 items-center">
                 
-                <!-- ÁREA DE CONTEÚDO -->
+                <!-- CONTENT AREA -->
                 <div class="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left order-2 lg:order-1">
                     
                     <span class="font-script text-indigo-700 hero-script text-3xl lg:text-5xl mb-2 block">Support Healthy</span>
@@ -216,46 +211,46 @@
                         <span class="bg-indigo-950 text-white font-black badge-naturally px-8 py-2.5 rounded-xl text-xl lg:text-3xl tracking-widest uppercase shadow-lg inline-block">NATURALLY</span>
                     </div>
 
-                    <!-- FOTO NO MOBILE (Após o Título) -->
+                    <!-- PHOTO ON MOBILE -->
                     <div class="block lg:hidden w-full flex justify-center">
                         <img src="images/glycop.png" alt="GlycoPezil Formula" class="blend-img blend-img-mobile" onerror="this.src='https://via.placeholder.com/400x500/ffffff/ffffff?text='">
                     </div>
 
-                    <!-- Lista de Benefícios -->
+                    <!-- Benefits List -->
                     <div class="space-y-3 mb-10 w-full max-w-md">
                         <div class="flex items-center gap-4 bg-white/70 p-4 rounded-2xl border border-white/50 shadow-sm">
-                            <div class="bg-indigo-900 p-1.5 rounded-full text-white"><i data-feather="droplet" class="w-4 h-4"></i></div>
-                            <p class="font-bold text-slate-800 text-xs lg:text-sm uppercase tracking-tight text-left">Ajuda a regular os níveis de açúcar no sangue</p>
+                            <div class="bg-indigo-900 p-1.5 rounded-full text-white"><i data-feather="target" class="w-4 h-4"></i></div>
+                            <p class="font-bold text-slate-800 text-xs lg:text-sm uppercase tracking-tight text-left">Precision Metabolic Balance Protocol</p>
                         </div>
                         <div class="flex items-center gap-4 bg-white/70 p-4 rounded-2xl border border-white/50 shadow-sm">
-                            <div class="bg-indigo-900 p-1.5 rounded-full text-white"><i data-feather="check-circle" class="w-4 h-4"></i></div>
-                            <p class="font-bold text-slate-800 text-xs lg:text-sm uppercase tracking-tight text-left">Ingredientes naturais e seguros</p>
+                            <div class="bg-indigo-900 p-1.5 rounded-full text-white"><i data-feather="zap" class="w-4 h-4"></i></div>
+                            <p class="font-bold text-slate-800 text-xs lg:text-sm uppercase tracking-tight text-left">Elite Bio-Cellular Nutrient Matrix</p>
                         </div>
                         <div class="flex items-center gap-4 bg-white/70 p-4 rounded-2xl border border-white/50 shadow-sm">
-                            <div class="bg-indigo-900 p-1.5 rounded-full text-white"><i data-feather="heart" class="w-4 h-4"></i></div>
-                            <p class="font-bold text-slate-800 text-xs lg:text-sm uppercase tracking-tight text-left">Suporta o bem-estar geral</p>
+                            <div class="bg-indigo-900 p-1.5 rounded-full text-white"><i data-feather="shield" class="w-4 h-4"></i></div>
+                            <p class="font-bold text-slate-800 text-xs lg:text-sm uppercase tracking-tight text-left">100% Natural Wellness Supremacy</p>
                         </div>
                     </div>
 
-                    <p class="text-lg lg:text-xl text-slate-600 mb-10 lg:mb-12 leading-relaxed max-w-xl font-medium tracking-tight px-2 lg:px-0">
-                        GlycoPezil™ oferece uma abordagem refinada e natural para apoiar o equilíbrio diário do seu corpo. Criado para quem exige excelência em saúde.
+                    <p class="text-lg lg:text-2xl text-slate-700 mb-10 lg:mb-12 leading-relaxed max-w-xl font-bold italic border-l-4 border-indigo-400 pl-6">
+                        REMASTER YOUR METABOLIC FREEDOM. GlycoPezil™ is the definitive formula for those who demand peak stability and uncompromising vitality in 2026.
                     </p>
 
                     <!-- CTAs -->
                     <div class="flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
-                        <a href="https://mwebora.com/12000/1227/7/?" class="cta-btn-main text-white px-10 py-5 lg:px-12 lg:py-6 rounded-2xl font-bold text-center flex flex-col items-center justify-center group">
-                            <span class="flex items-center gap-2 text-xl lg:text-2xl uppercase tracking-tighter">Pedir Agora e Poupar <i data-feather="shopping-bag" class="w-6 h-6"></i></span>
-                            <span class="text-[9px] opacity-80 uppercase tracking-widest mt-1">Checkout Oficial e Seguro</span>
+                        <a href="https://mwebora.com/12000/1227/7/?" class="cta-btn-main text-white px-10 py-5 lg:px-12 lg:py-6 rounded-2xl font-black text-center flex flex-col items-center justify-center group">
+                            <span class="flex items-center gap-2 text-xl lg:text-3xl uppercase tracking-tighter">Claim Yours Now <i data-feather="shopping-bag" class="w-6 h-6"></i></span>
+                            <span class="text-[9px] opacity-80 font-bold uppercase tracking-widest mt-1">Official Secure Checkout</span>
                         </a>
                         
                         <a href="https://mwebora.com/12000/1227/3/?" class="bg-white/80 border-2 border-indigo-900 text-indigo-950 px-10 py-5 lg:px-12 lg:py-6 rounded-2xl font-bold text-center flex flex-col items-center justify-center transition-all hover:bg-white shadow-sm">
-                            <span class="flex items-center gap-2 text-xl lg:text-2xl uppercase tracking-tighter">Ver Vídeo <i data-feather="play-circle" class="w-6 h-6"></i></span>
-                            <span class="text-[9px] text-slate-500 uppercase tracking-widest mt-1">Apresentação Exclusiva</span>
+                            <span class="flex items-center gap-2 text-xl lg:text-2xl uppercase tracking-tighter">Watch Presentation <i data-feather="play-circle" class="w-6 h-6"></i></span>
+                            <span class="text-[9px] text-slate-500 font-bold uppercase tracking-widest mt-1">Exclusive Video Access</span>
                         </a>
                     </div>
                 </div>
 
-                <!-- FOTO NO DESKTOP (À Direita) -->
+                <!-- PHOTO ON DESKTOP -->
                 <div class="hidden lg:flex lg:col-span-5 justify-center order-1 lg:order-2">
                     <img src="images/glycop.png" alt="GlycoPezil Official" class="blend-img w-full lg:max-w-[550px]" onerror="this.src='https://via.placeholder.com/600x800/ffffff/ffffff?text='">
                 </div>
@@ -263,82 +258,91 @@
             </div>
         </section>
 
-        <!-- Marquee de Reviews (5 Depoimentos) -->
+        <!-- Marquee Reviews (5 Testimonials) -->
         <section class="pb-24 pt-8">
             <div class="max-w-7xl mx-auto px-6 text-center mb-10">
                 <div class="flex justify-center gap-1.5 stars-gold mb-3">
                     <i data-feather="star" class="fill-current"></i><i data-feather="star" class="fill-current"></i><i data-feather="star" class="fill-current"></i><i data-feather="star" class="fill-current"></i><i data-feather="star" class="fill-current"></i>
                 </div>
-                <h3 class="text-indigo-900 font-black uppercase tracking-[0.3em] text-xs lg:text-sm">Resultados Reais de Utilizadores</h3>
+                <h3 class="text-indigo-900 font-black uppercase tracking-[0.3em] text-xs lg:text-sm">Real World Results from Real Users</h3>
             </div>
             
             <div class="marquee-container">
                 <div class="marquee-content">
                     <div class="review-card">
-                        <div class="flex justify-between items-start mb-4"><div class="stars-gold font-bold">★★★★★</div><div class="verified-badge">Verificada</div></div>
-                        <p class="text-sm font-medium text-slate-700 italic leading-snug">"O melhor suporte que já utilizei até hoje. Sinto que o meu corpo finalmente encontrou o equilíbrio que procurava."</p>
+                        <div class="flex justify-between items-start mb-4"><div class="stars-gold font-bold">★★★★★</div><div class="verified-badge">Verified</div></div>
+                        <p class="text-sm font-bold text-slate-800 italic leading-tight uppercase">"The only support that actually works. My body finally feels balanced after years of searching. Highly recommend!"</p>
                         <div class="text-[11px] font-extrabold text-slate-900 uppercase mt-4">— Robert M., NY</div>
                     </div>
                     <div class="review-card">
-                        <div class="flex justify-between items-start mb-4"><div class="stars-gold font-bold">★★★★★</div><div class="verified-badge">Verificada</div></div>
-                        <p class="text-sm font-medium text-slate-700 italic leading-snug">"Envio super rápido e qualidade extrema. Notei a diferença logo nas primeiras semanas de utilização."</p>
+                        <div class="flex justify-between items-start mb-4"><div class="stars-gold font-bold">★★★★★</div><div class="verified-badge">Verified</div></div>
+                        <p class="text-sm font-bold text-slate-800 italic leading-tight uppercase">"Lightning fast shipping and elite quality. I noticed a massive difference within the first 14 days."</p>
                         <div class="text-[11px] font-extrabold text-slate-900 uppercase mt-4">— Sarah L., LA</div>
                     </div>
                     <div class="review-card">
-                        <div class="flex justify-between items-start mb-4"><div class="stars-gold font-bold">★★★★★</div><div class="verified-badge">Verificada</div></div>
-                        <p class="text-sm font-medium text-slate-700 italic leading-snug">"Transparência total da marca. Uma fórmula que realmente cumpre o que promete. Muito satisfeito."</p>
+                        <div class="flex justify-between items-start mb-4"><div class="stars-gold font-bold">★★★★★</div><div class="verified-badge">Verified</div></div>
+                        <p class="text-sm font-bold text-slate-800 italic leading-tight uppercase">"Total transparency. This formula actually fulfills what it promises. Extremely satisfied with my progress."</p>
                         <div class="text-[11px] font-extrabold text-slate-900 uppercase mt-4">— James T., CH</div>
                     </div>
                     <div class="review-card">
-                        <div class="flex justify-between items-start mb-4"><div class="stars-gold font-bold">★★★★★</div><div class="verified-badge">Verificada</div></div>
-                        <p class="text-sm font-medium text-slate-700 italic leading-snug">"Estou no meu terceiro mês e os resultados são constantes. Mudou completamente a minha vitalidade diária."</p>
+                        <div class="flex justify-between items-start mb-4"><div class="stars-gold font-bold">★★★★★</div><div class="verified-badge">Verified</div></div>
+                        <p class="text-sm font-bold text-slate-800 italic leading-tight uppercase">"I'm on my 3rd bottle and the energy levels are incredible. It has completely changed my daily routine."</p>
                         <div class="text-[11px] font-extrabold text-slate-900 uppercase mt-4">— Jessica F., TX</div>
                     </div>
                     <div class="review-card">
-                        <div class="flex justify-between items-start mb-4"><div class="stars-gold font-bold">★★★★★</div><div class="verified-badge">Verificada</div></div>
-                        <p class="text-sm font-medium text-slate-700 italic leading-snug">"Fórmula premium de verdade. O apoio ao cliente é excelente e esclareceu todas as minhas dúvidas."</p>
-                        <div class="text-[11px] font-extrabold text-slate-900 uppercase mt-4">— Michael P., AZ</div>
+                        <div class="flex justify-between items-start mb-4"><div class="stars-gold font-bold">★★★★★</div><div class="verified-badge">Verified</div></div>
+                        <p class="text-sm font-bold text-slate-800 italic leading-tight uppercase">"Elite level support. Customer service was excellent and answered all my metabolic health questions."</p>
+                        <div class="text-[11px] font-black text-slate-500 uppercase mt-4">— Michael P., AZ</div>
                     </div>
-                    <!-- Loop items -->
-                    <div class="review-card"><p class="text-sm italic">"O melhor suporte que já utilizei..."</p></div>
+                    <!-- Duplicate for loop -->
+                    <div class="review-card"><p class="text-sm italic">"The only support that actually works..."</p></div>
                 </div>
             </div>
         </section>
 
-        <!-- Perguntas Frequentes (FAQ) -->
+        <!-- FAQ SECTION -->
         <section class="py-20 bg-white/40">
             <div class="max-w-2xl mx-auto px-6">
                 <div class="text-center mb-12">
-                    <h2 class="text-4xl lg:text-7xl font-black text-slate-900 mb-2 tracking-tighter">FAQ</h2>
-                    <p class="text-[10px] lg:text-xs text-slate-500 font-bold uppercase tracking-[0.4em]">Respostas Rápidas</p>
+                    <h2 class="text-4xl lg:text-7xl font-black text-slate-900 mb-2 tracking-tighter uppercase">FAQ</h2>
+                    <p class="text-[10px] lg:text-xs text-slate-500 font-bold uppercase tracking-[0.4em]">Precision Answers</p>
                 </div>
 
                 <div class="space-y-3">
                     <div class="faq-item" onclick="toggleFaq(this)">
                         <div class="faq-question">
-                            <span>Como devo utilizar o GlycoPezil™?</span>
+                            <span>How should I use GlycoPezil™?</span>
                             <i data-feather="plus" class="faq-icon w-4 h-4 text-slate-400"></i>
                         </div>
-                        <div class="faq-answer">
-                            Para resultados otimizados, tome uma dose diária com um copo cheio de água, idealmente 20 a 30 minutos antes da sua primeira refeição do dia.
+                        <div class="faq-answer font-medium">
+                            For peak results, take one serving daily with a full glass of water, ideally 20 to 30 minutes before your first meal of the day.
                         </div>
                     </div>
                     <div class="faq-item" onclick="toggleFaq(this)">
                         <div class="faq-question">
-                            <span>O produto tem garantia real?</span>
+                            <span>Is there a real guarantee?</span>
                             <i data-feather="plus" class="faq-icon w-4 h-4 text-slate-400"></i>
                         </div>
-                        <div class="faq-answer">
-                            Sim. Protegemos a sua decisão com uma garantia incondicional de 60 dias. Se não estiver satisfeito, devolvemos o seu investimento sem perguntas.
+                        <div class="faq-answer font-medium">
+                            Yes. We protect your decision with an ironclad 60-Day Money-Back Guarantee. If you are not 100% satisfied with your results, we refund your investment—no questions asked.
                         </div>
                     </div>
                     <div class="faq-item" onclick="toggleFaq(this)">
                         <div class="faq-question">
-                            <span>Os ingredientes são seguros?</span>
+                            <span>Are the ingredients safe?</span>
                             <i data-feather="plus" class="faq-icon w-4 h-4 text-slate-400"></i>
                         </div>
-                        <div class="faq-answer">
-                            Sim. A nossa fórmula é composta por ingredientes naturais de alta qualidade, produzida em instalações certificadas nos EUA seguindo normas rígidas.
+                        <div class="faq-answer font-medium">
+                            Absolutely. Our formula consists of 100% natural, clinical-grade ingredients produced in a sterile, state-of-the-art facility in the USA following rigid quality standards.
+                        </div>
+                    </div>
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span>How long does shipping take?</span>
+                            <i data-feather="plus" class="faq-icon w-4 h-4 text-slate-400"></i>
+                        </div>
+                        <div class="faq-answer font-medium">
+                            Orders are processed within 24 hours. Domestic US shipping typically takes 3 to 5 business days via tracked carriers.
                         </div>
                     </div>
                 </div>
@@ -346,7 +350,7 @@
         </section>
     </main>
 
-    <!-- Rodapé -->
+    <!-- Footer -->
     <footer class="bg-slate-950 pt-16 pb-12 text-slate-600">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid lg:grid-cols-12 gap-12 mb-16 text-center lg:text-left">
@@ -354,55 +358,55 @@
                     <div class="flex items-center justify-center lg:justify-start mb-8">
                         <span class="font-heading font-black text-2xl text-white tracking-tighter uppercase">GLYCOPEZIL</span>
                     </div>
-                    <p class="text-xs leading-relaxed mb-10 max-w-sm mx-auto lg:mx-0 text-slate-400 font-medium">
-                        Pioneirismo em bem-estar metabólico através de ingredientes naturais de elite. Dedicados à sua vitalidade.
+                    <p class="text-[10px] lg:text-xs leading-relaxed mb-10 max-w-sm mx-auto lg:mx-0 text-slate-400 font-bold uppercase italic">
+                        Pioneering metabolic freedom through elite natural science. Dedicated to your long-term vitality.
                     </p>
                     <div class="space-y-2">
-                        <div class="text-[10px] font-black uppercase text-slate-800">Apoio ao Cliente</div>
+                        <div class="text-[10px] font-black uppercase text-slate-800 tracking-widest">Support Center</div>
                         <p class="text-white font-bold text-xl uppercase">support@customercs.com</p>
                     </div>
                 </div>
 
                 <div class="lg:col-span-7">
                     <div class="bg-white/5 rounded-2xl p-10 border border-white/10">
-                        <p class="text-[10px] lg:text-[11px] leading-relaxed italic text-slate-500 text-justify uppercase">
-                            <strong>Aviso FDA:</strong> Estas declarações não foram avaliadas pela FDA. Este produto não se destina a diagnosticar, tratar, curar ou prevenir qualquer doença. Os resultados individuais podem variar. © 2026 Distribuidor Autorizado.
+                        <p class="text-[10px] lg:text-[11px] leading-relaxed italic text-slate-500 text-justify uppercase font-bold">
+                            <strong>FDA Disclaimer:</strong> These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease. Individual results may vary. © 2026 Authorized Distributor.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="border-t border-white/5 pt-12 flex flex-col md:flex-row justify-between items-center gap-10 text-[10px] font-black uppercase tracking-[0.3em]">
-                <nav class="flex flex-wrap justify-center gap-x-12 gap-y-6">
-                    <button onclick="openModal('privacy')" class="hover:text-indigo-400 transition-colors">Privacidade</button>
-                    <button onclick="openModal('terms')" class="hover:text-indigo-400 transition-colors">Termos</button>
-                    <button onclick="openModal('returns')" class="hover:text-indigo-400 transition-colors">Garantia</button>
+            <div class="border-t border-white/5 pt-12 flex flex-col md:flex-row justify-between items-center gap-10 text-[9px] font-black uppercase tracking-widest">
+                <nav class="flex gap-8">
+                    <button onclick="openModal('privacy')" class="hover:text-indigo-400 transition-colors">Privacy</button>
+                    <button onclick="openModal('terms')" class="hover:text-indigo-400 transition-colors">Terms</button>
+                    <button onclick="openModal('returns')" class="hover:text-indigo-400 transition-colors">Guarantee</button>
                 </nav>
                 
                 <div class="flex flex-col items-center md:items-end gap-3">
-                    <span class="text-slate-700 opacity-60">Distribuidor Autorizado</span>
-                    <p class="text-slate-800 text-[11px] tracking-widest uppercase">© 2026 GlycoPezil Labs. Todos os direitos reservados.</p>
+                    <span class="text-slate-700 opacity-60">Authorized Distributor</span>
+                    <p class="text-slate-800 text-[11px] tracking-widest uppercase">© 2026 GlycoPezil Labs. All rights reserved.</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Modais de Políticas -->
-    <div id="policy-modal" class="fixed inset-0 z-[100] hidden" aria-modal="true">
-        <div class="fixed inset-0 bg-slate-950/98 backdrop-blur-3xl" onclick="closeModal()"></div>
+    <!-- Modals -->
+    <div id="policy-modal" class="fixed inset-0 z-[100] hidden">
+        <div class="fixed inset-0 bg-slate-950/90 backdrop-blur-3xl" onclick="closeModal()"></div>
         <div class="fixed inset-0 flex items-center justify-center p-4">
-            <div class="bg-white w-full max-w-md rounded-2xl overflow-hidden shadow-2xl relative">
+            <div class="bg-white w-full max-w-md rounded-2xl overflow-hidden relative shadow-2xl">
                 <div class="px-8 py-6 border-b border-slate-100 flex justify-between items-center bg-slate-50">
-                    <h3 class="font-bold text-slate-900 text-xl uppercase" id="modal-title">Política</h3>
+                    <h3 class="font-black text-slate-900 text-xl uppercase" id="modal-title">Policy</h3>
                     <button onclick="closeModal()"><i data-feather="x" class="w-6 h-6 text-slate-400"></i></button>
                 </div>
-                <div class="p-8 max-h-[50vh] overflow-y-auto text-slate-600 text-xs leading-relaxed uppercase" id="modal-content"></div>
+                <div class="p-8 max-h-[50vh] overflow-y-auto text-[11px] font-bold text-slate-600 leading-relaxed uppercase" id="modal-content"></div>
             </div>
         </div>
     </div>
 
     <script>
-        // Inicializar ícones
+        // Initialize Icons
         feather.replace();
 
         // FAQ Toggle
@@ -412,11 +416,11 @@
             element.classList.toggle('active');
         }
 
-        // Dados dos Modais
+        // Modal Data
         const modalData = {
-            privacy: { title: "Política de Privacidade", content: "Os seus dados são protegidos por encriptação e utilizados apenas para o processamento de encomendas e comunicação oficial." },
-            terms: { title: "Termos de Utilização", content: "Ao adquirir os nossos suplementos, concorda com as nossas diretrizes de utilização responsável e termos legais de venda." },
-            returns: { title: "Política de Reembolso", content: "Garantimos a devolução total do valor pago no prazo de 60 dias caso não esteja satisfeito com os resultados obtidos." }
+            privacy: { title: "Privacy Policy", content: "Your data is protected by industry-standard encryption and used solely for order processing and official communication." },
+            terms: { title: "Terms of Use", content: "By purchasing our products, you agree to our responsible use guidelines and legal terms of sale." },
+            returns: { title: "Refund Policy", content: "We guarantee a 100% refund of your investment within 60 days if you are not fully satisfied with your results." }
         };
 
         function openModal(type) {
