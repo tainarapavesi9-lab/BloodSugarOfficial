@@ -29,7 +29,7 @@
             --midnight: #17153B;
             --indigo-brand: #433D8B;
             --purple-accent: #2E236C;
-            --bg-body: #E4E4ED; 
+            --bg-body: #E3E1ED; /* Requested Color */
         }
 
         body { 
@@ -42,13 +42,17 @@
             position: relative;
         }
 
-        /* Premium Background Texture */
+        /* Combined Layered Textures */
         body::before {
             content: "";
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-            opacity: 0.04;
+            /* Layer 1: Noise Filter | Layer 2: Subtle Dot Pattern */
+            background-image: 
+                url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),
+                radial-gradient(#433D8B 0.5px, transparent 0.5px);
+            background-size: auto, 30px 30px;
+            opacity: 0.05;
             pointer-events: none;
             z-index: 100;
         }
@@ -75,10 +79,10 @@
             white-space: nowrap;
             position: relative;
             padding: 2.5rem 0;
-            background: rgba(255, 255, 255, 0.3);
-            backdrop-filter: blur(8px);
-            border-top: 1px solid rgba(23, 21, 59, 0.05);
-            border-bottom: 1px solid rgba(23, 21, 59, 0.05);
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(67, 61, 139, 0.05);
+            border-bottom: 1px solid rgba(67, 61, 139, 0.05);
         }
 
         .marquee-content {
@@ -96,7 +100,7 @@
             min-width: 300px;
             white-space: normal;
             border: 1px solid rgba(67, 61, 139, 0.05);
-            box-shadow: 0 10px 30px -5px rgba(23, 21, 59, 0.02);
+            box-shadow: 0 10px 30px -5px rgba(23, 21, 59, 0.03);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -126,6 +130,7 @@
             box-shadow: 0 20px 40px -10px rgba(67, 61, 139, 0.4);
         }
 
+        /* FAQ Style */
         .faq-item {
             background: white;
             border: 1px solid rgba(67, 61, 139, 0.05);
@@ -182,7 +187,7 @@
 <body>
 
     <div class="geo-bg">
-        <div class="absolute w-[600px] h-[600px] bg-indigo-500/5 blur-[120px] rounded-full top-0 right-0"></div>
+        <div class="absolute w-[600px] h-[600px] bg-indigo-500/10 blur-[120px] rounded-full top-0 right-0"></div>
         <div class="absolute w-[500px] h-[500px] bg-purple-500/5 blur-[100px] rounded-full bottom-0 left-0"></div>
     </div>
 
@@ -211,22 +216,22 @@
                         <span class="bg-indigo-950 text-white font-black badge-naturally px-8 py-2.5 rounded-xl text-xl lg:text-3xl tracking-widest uppercase shadow-lg inline-block">NATURALLY</span>
                     </div>
 
-                    <!-- PHOTO ON MOBILE -->
+                    <!-- PHOTO ON MOBILE (Directly After Title) -->
                     <div class="block lg:hidden w-full flex justify-center">
                         <img src="images/glycop.png" alt="GlycoPezil Formula" class="blend-img blend-img-mobile" onerror="this.src='https://via.placeholder.com/400x500/ffffff/ffffff?text='">
                     </div>
 
-                    <!-- Benefits List -->
+                    <!-- Benefits List (Agressive but Compliant) -->
                     <div class="space-y-3 mb-10 w-full max-w-md">
-                        <div class="flex items-center gap-4 bg-white/70 p-4 rounded-2xl border border-white/50 shadow-sm">
+                        <div class="flex items-center gap-4 bg-white/80 p-4 rounded-2xl border border-white/50 shadow-sm">
                             <div class="bg-indigo-900 p-1.5 rounded-full text-white"><i data-feather="target" class="w-4 h-4"></i></div>
                             <p class="font-bold text-slate-800 text-xs lg:text-sm uppercase tracking-tight text-left">Precision Metabolic Balance Protocol</p>
                         </div>
-                        <div class="flex items-center gap-4 bg-white/70 p-4 rounded-2xl border border-white/50 shadow-sm">
+                        <div class="flex items-center gap-4 bg-white/80 p-4 rounded-2xl border border-white/50 shadow-sm">
                             <div class="bg-indigo-900 p-1.5 rounded-full text-white"><i data-feather="zap" class="w-4 h-4"></i></div>
                             <p class="font-bold text-slate-800 text-xs lg:text-sm uppercase tracking-tight text-left">Elite Bio-Cellular Nutrient Matrix</p>
                         </div>
-                        <div class="flex items-center gap-4 bg-white/70 p-4 rounded-2xl border border-white/50 shadow-sm">
+                        <div class="flex items-center gap-4 bg-white/80 p-4 rounded-2xl border border-white/50 shadow-sm">
                             <div class="bg-indigo-900 p-1.5 rounded-full text-white"><i data-feather="shield" class="w-4 h-4"></i></div>
                             <p class="font-bold text-slate-800 text-xs lg:text-sm uppercase tracking-tight text-left">100% Natural Wellness Supremacy</p>
                         </div>
@@ -243,7 +248,7 @@
                             <span class="text-[9px] opacity-80 font-bold uppercase tracking-widest mt-1">Official Secure Checkout</span>
                         </a>
                         
-                        <a href="https://mwebora.com/12000/1227/3/?" class="bg-white/80 border-2 border-indigo-900 text-indigo-950 px-10 py-5 lg:px-12 lg:py-6 rounded-2xl font-bold text-center flex flex-col items-center justify-center transition-all hover:bg-white shadow-sm">
+                        <a href="https://mwebora.com/12000/1227/3/?" class="bg-white/90 border-2 border-indigo-900 text-indigo-950 px-10 py-5 lg:px-12 lg:py-6 rounded-2xl font-black text-center flex flex-col items-center justify-center transition-all hover:bg-white shadow-sm">
                             <span class="flex items-center gap-2 text-xl lg:text-2xl uppercase tracking-tighter">Watch Presentation <i data-feather="play-circle" class="w-6 h-6"></i></span>
                             <span class="text-[9px] text-slate-500 font-bold uppercase tracking-widest mt-1">Exclusive Video Access</span>
                         </a>
@@ -272,30 +277,28 @@
                     <div class="review-card">
                         <div class="flex justify-between items-start mb-4"><div class="stars-gold font-bold">★★★★★</div><div class="verified-badge">Verified</div></div>
                         <p class="text-sm font-bold text-slate-800 italic leading-tight uppercase">"The only support that actually works. My body finally feels balanced after years of searching. Highly recommend!"</p>
-                        <div class="text-[11px] font-extrabold text-slate-900 uppercase mt-4">— Robert M., NY</div>
+                        <div class="text-[11px] font-black text-slate-500 uppercase mt-4">— Robert M., NY</div>
                     </div>
                     <div class="review-card">
                         <div class="flex justify-between items-start mb-4"><div class="stars-gold font-bold">★★★★★</div><div class="verified-badge">Verified</div></div>
                         <p class="text-sm font-bold text-slate-800 italic leading-tight uppercase">"Lightning fast shipping and elite quality. I noticed a massive difference within the first 14 days."</p>
-                        <div class="text-[11px] font-extrabold text-slate-900 uppercase mt-4">— Sarah L., LA</div>
+                        <div class="text-[11px] font-black text-slate-500 uppercase mt-4">— Sarah L., LA</div>
                     </div>
                     <div class="review-card">
                         <div class="flex justify-between items-start mb-4"><div class="stars-gold font-bold">★★★★★</div><div class="verified-badge">Verified</div></div>
                         <p class="text-sm font-bold text-slate-800 italic leading-tight uppercase">"Total transparency. This formula actually fulfills what it promises. Extremely satisfied with my progress."</p>
-                        <div class="text-[11px] font-extrabold text-slate-900 uppercase mt-4">— James T., CH</div>
+                        <div class="text-[11px] font-black text-slate-500 uppercase mt-4">— James T., CH</div>
                     </div>
                     <div class="review-card">
                         <div class="flex justify-between items-start mb-4"><div class="stars-gold font-bold">★★★★★</div><div class="verified-badge">Verified</div></div>
                         <p class="text-sm font-bold text-slate-800 italic leading-tight uppercase">"I'm on my 3rd bottle and the energy levels are incredible. It has completely changed my daily routine."</p>
-                        <div class="text-[11px] font-extrabold text-slate-900 uppercase mt-4">— Jessica F., TX</div>
+                        <div class="text-[11px] font-black text-slate-500 uppercase mt-4">— Jessica F., TX</div>
                     </div>
                     <div class="review-card">
                         <div class="flex justify-between items-start mb-4"><div class="stars-gold font-bold">★★★★★</div><div class="verified-badge">Verified</div></div>
                         <p class="text-sm font-bold text-slate-800 italic leading-tight uppercase">"Elite level support. Customer service was excellent and answered all my metabolic health questions."</p>
                         <div class="text-[11px] font-black text-slate-500 uppercase mt-4">— Michael P., AZ</div>
                     </div>
-                    <!-- Duplicate for loop -->
-                    <div class="review-card"><p class="text-sm italic">"The only support that actually works..."</p></div>
                 </div>
             </div>
         </section>
@@ -358,7 +361,7 @@
                     <div class="flex items-center justify-center lg:justify-start mb-8">
                         <span class="font-heading font-black text-2xl text-white tracking-tighter uppercase">GLYCOPEZIL</span>
                     </div>
-                    <p class="text-[10px] lg:text-xs leading-relaxed mb-10 max-w-sm mx-auto lg:mx-0 text-slate-400 font-bold uppercase italic">
+                    <p class="text-[10px] lg:text-[11px] leading-relaxed mb-10 max-w-sm mx-auto lg:mx-0 text-slate-400 font-bold uppercase italic">
                         Pioneering metabolic freedom through elite natural science. Dedicated to your long-term vitality.
                     </p>
                     <div class="space-y-2">
@@ -368,7 +371,7 @@
                 </div>
 
                 <div class="lg:col-span-7">
-                    <div class="bg-white/5 rounded-2xl p-10 border border-white/10">
+                    <div class="bg-white/5 rounded-3xl p-10 border border-white/10">
                         <p class="text-[10px] lg:text-[11px] leading-relaxed italic text-slate-500 text-justify uppercase font-bold">
                             <strong>FDA Disclaimer:</strong> These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease. Individual results may vary. © 2026 Authorized Distributor.
                         </p>
@@ -378,14 +381,14 @@
 
             <div class="border-t border-white/5 pt-12 flex flex-col md:flex-row justify-between items-center gap-10 text-[9px] font-black uppercase tracking-widest">
                 <nav class="flex gap-8">
-                    <button onclick="openModal('privacy')" class="hover:text-indigo-400 transition-colors">Privacy</button>
-                    <button onclick="openModal('terms')" class="hover:text-indigo-400 transition-colors">Terms</button>
+                    <button onclick="openModal('privacy')" class="hover:text-indigo-400 transition-colors">Privacy Policy</button>
+                    <button onclick="openModal('terms')" class="hover:text-indigo-400 transition-colors">Terms of Use</button>
                     <button onclick="openModal('returns')" class="hover:text-indigo-400 transition-colors">Guarantee</button>
                 </nav>
                 
                 <div class="flex flex-col items-center md:items-end gap-3">
                     <span class="text-slate-700 opacity-60">Authorized Distributor</span>
-                    <p class="text-slate-800 text-[11px] tracking-widest uppercase">© 2026 GlycoPezil Labs. All rights reserved.</p>
+                    <p class="text-slate-800">© 2026 GlycoPezil Labs. All rights reserved.</p>
                 </div>
             </div>
         </div>
@@ -406,17 +409,14 @@
     </div>
 
     <script>
-        // Initialize Icons
         feather.replace();
 
-        // FAQ Toggle
         function toggleFaq(element) {
             const items = document.querySelectorAll('.faq-item');
             items.forEach(item => { if (item !== element) item.classList.remove('active'); });
             element.classList.toggle('active');
         }
 
-        // Modal Data
         const modalData = {
             privacy: { title: "Privacy Policy", content: "Your data is protected by industry-standard encryption and used solely for order processing and official communication." },
             terms: { title: "Terms of Use", content: "By purchasing our products, you agree to our responsible use guidelines and legal terms of sale." },
