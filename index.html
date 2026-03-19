@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- =========================
+    SEO & ADS COMPLIANCE 2026
+    ========================= -->
+    <title>GlycoPezil | Natural Blood Sugar Support Formula – Official Website</title>
+    <meta name="description" content="Discover GlycoPezil, a natural blood sugar support formula designed to help maintain healthy glucose levels and support metabolic wellness. Official website.">
+    <meta name="keywords" content="GlycoPezil, blood sugar support, glucose support formula, natural wellness, metabolic health">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://bloodsugarmethod.vercel.app/">
+
+    <!-- Performance & Speed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="images/glycopezil1.webp">
+
+    <!-- EXTERNAL TRACKING SCRIPT -->
+    <script src="https://cdn.raadsgate.com/code/8300-bd78ddee-305e-4e3c-87e1-b47e1f19de66"></script>
+
+    <!-- FAVICON (Explicit folder images) -->
+    <link rel="icon" type="image/png" href="images/faviconV2.png">
+    <link rel="shortcut icon" type="image/png" href="images/faviconV2.png">
+
+    <!-- UI ASSETS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <style>
+        :root {
+            --brand-primary: #2F1557;
+            --brand-purple: #7C3AED;
+            --brand-bg: #FFFFFF;
+            --brand-text: #0F172A;
+            --brand-muted: #64748B;
+            --footer-bg: #0A0712;
+            --header-bg: #31165B;
+        }
+        
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            -webkit-font-smoothing: antialiased;
+            background-color: var(--brand-bg);
+            color: var(--brand-text);
+            overflow-x: hidden;
+            margin: 0;
+        }
+
+        /* Ambient Color Mesh Background */
+        .ambient-layer {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1;
+            pointer-events: none;
+            background-color: #fcfaff;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(124, 58, 237, 0.12) 0, transparent 50%), 
+                radial-gradient(at 100% 0%, rgba(16, 185, 129, 0.05) 0, transparent 40%),
+                radial-gradient(at 100% 100%, rgba(47, 21, 87, 0.08) 0, transparent 50%),
+                radial-gradient(at 0% 100%, rgba(199, 210, 254, 0.15) 0, transparent 50%);
+        }
+
+        .container-site {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* HEADER */
+        header { 
+            padding: 1.25rem 0; 
+            position: relative; 
+            z-index: 50; 
+            background-color: var(--header-bg);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        /* HERO SECTION */
+        .hero-section {
+            padding-top: 2rem;
+            padding-bottom: 4rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero-title-block {
+            line-height: 0.88;
+            letter-spacing: -0.05em;
+        }
+
+        .title-line {
+            display: block;
+            font-size: clamp(2.6rem, 6.5vw, 5rem);
+            font-weight: 800;
+            color: var(--brand-text);
+        }
+
+        .title-accent {
+            color: var(--brand-purple);
+        }
+
+        .title-sub {
+            font-size: clamp(1.3rem, 3.5vw, 2.4rem);
+            font-weight: 800;
+            margin-top: 1rem;
+            display: block;
+            color: var(--brand-text);
+        }
+
+        /* BUTTONS */
+        .btn-buy {
+            background-color: var(--brand-primary);
+            color: white;
+            padding: 0.85rem 1.5rem;
+            border-radius: 99px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 700;
+            font-size: 1.05rem;
+            width: 100%;
+            max-width: 350px;
+            transition: all 0.3s ease;
+            box-shadow: 0 15px 30px rgba(47, 21, 87, 0.2);
+            border: none;
+            text-decoration: none;
+        }
+        .btn-buy:hover { transform: translateY(-2px); filter: brightness(1.15); }
+        
+        .cart-dot {
+            background: rgba(255, 255, 255, 0.2);
+            width: 38px; height: 38px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+        }
+
+        .btn-video {
+            background: #F8FAFC; 
+            border: 2px solid #CBD5E1; /* Borda definida */
+            color: #1E293B;
+            padding: 0.85rem 1.5rem;
+            border-radius: 99px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            font-weight: 700;
+            font-size: 1.05rem;
+            width: 100%;
+            max-width: 350px;
+            margin-top: 1rem;
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+        .btn-video:hover { background: #F1F5F9; border-color: #94A3B8; transform: translateY(-1px); }
+
+        /* PRODUCT IMAGE */
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            filter: drop-shadow(0 30px 50px rgba(47, 21, 87, 0.15));
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: var(--footer-bg);
+            color: #94A3B8;
+            padding: 3rem 0;
+            margin-top: 2rem;
+            position: relative;
+            z-index: 50;
+        }
+        .footer-logo { color: white; font-weight: 800; font-size: 1.15rem; letter-spacing: -0.02em; }
+        .fda-text-box {
+            background: rgba(255,255,255,0.02);
+            padding: 1.25rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.05);
+            font-size: 10.5px;
+            line-height: 1.6;
+        }
+        .footer-nav-link {
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #64748B;
+            transition: color 0.2s;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .footer-nav-link:hover { color: white; }
+
+        /* MOBILE CENTRALIZED CONFIGURATION */
+        @media (max-width: 1024px) {
+            .hero-content-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center; 
+                text-align: center;   
+            }
+            .hero-badge-container { order: 1; margin-bottom: 1rem; justify-content: center; width: 100%; }
+            .hero-title-block { order: 2; margin-bottom: 1rem; width: 100%; }
+            .product-image-container { order: 3; margin: 1rem 0 2rem 0; display: flex; justify-content: center; width: 100%; } /* FOTO DEPOIS DO TITULO */
+            .hero-description { order: 4; margin: 0 auto 2rem auto; max-width: 90%; }
+            .cta-container { order: 5; display: flex; flex-direction: column; align-items: center; width: 100%; }
+            .trust-row { order: 6; justify-content: center; margin-top: 3rem; opacity: 0.5; width: 100%; }
+            
+            .btn-buy, .btn-video { margin-left: auto; margin-right: auto; }
+            footer { padding: 2.5rem 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ambient-layer"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container-site">
+            <span class="font-extrabold text-2xl tracking-tighter text-white uppercase">GLYCOPEZIL</span>
+        </div>
+    </header>
+
+    <main class="hero-section">
+        <div class="container-site">
+            <div class="hero-content-wrapper lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center">
+                
+                <!-- CONTENT AREA -->
+                <div class="lg:col-span-7 flex flex-col">
+                    
+                    <!-- Trust Badge -->
+                    <div class="hero-badge-container inline-flex items-center bg-white/80 backdrop-blur-sm px-3 py-1.5 rounded-lg border border-gray-100 mx-auto lg:mx-0 lg:mb-8 shadow-sm">
+                        <span class="text-[9px] font-black text-gray-400 uppercase tracking-widest flex items-center gap-1.5">
+                            <span class="text-amber-400">★★★★★</span> TRUSTED BY 1,900+ HAPPY CUSTOMERS
+                        </span>
+                    </div>
+
+                    <!-- Headline -->
+                    <div class="hero-title-block lg:text-left">
+                        <span class="title-line">Daily Support</span>
+                        <span class="title-line">For</span>
+                        <span class="title-line title-accent">Healthy Blood</span>
+                        <span class="title-line title-accent">Sugar</span>
+                        <span class="title-sub">With GlycoPezil</span>
+                    </div>
+
+                    <!-- PHOTO (Mobile order-3, after title) -->
+                    <div class="product-image-container lg:hidden">
+                        <img src="images/glycopezil1.webp" alt="GlycoPezil Product" class="product-image max-w-[280px]">
+                    </div>
+                    
+                    <!-- Description -->
+                    <p class="hero-description text-base text-gray-500 max-w-lg leading-relaxed font-medium lg:text-left lg:mt-8">
+                        Discover a natural way to support balanced blood sugar and daily metabolic health. Our advanced formula is designed to help maintain healthy glucose levels.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="cta-container mb-12 lg:mt-10">
+                        <a href="https://6pcb7.doctorimpact.com/l" class="btn-buy">
+                            <span>Get GlycoPezil Today</span>
+                            <div class="cart-dot">
+                                <i data-feather="shopping-cart" class="w-4 h-4 text-white"></i>
+                            </div>
+                        </a>
+                        
+                        <a href="https://txqcm.doctormedved.com/l" class="btn-video">
+                            <i data-feather="play-circle" class="w-5 h-5 text-brand-purple"></i>
+                            Watch Video
+                        </a>
+                    </div>
+
+                    <!-- Trust Checklist -->
+                    <div class="trust-row flex flex-wrap gap-x-8 gap-y-3 opacity-40">
+                        <div class="flex items-center gap-1.5">
+                            <i data-feather="check" class="w-3 h-3"></i>
+                            <span class="text-[9px] font-bold uppercase tracking-widest">60-DAY GUARANTEE</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <i data-feather="check" class="w-3 h-3"></i>
+                            <span class="text-[9px] font-bold uppercase tracking-widest">MADE IN USA</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <i data-feather="check" class="w-3 h-3"></i>
+                            <span class="text-[9px] font-bold uppercase tracking-widest">GMP CERTIFIED</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DESKTOP PHOTO (Hidden on Mobile) -->
+                <div class="hidden lg:flex lg:col-span-5 justify-end">
+                    <img src="images/glycopezil1.webp" 
+                         alt="GlycoPezil Formula" 
+                         class="product-image max-w-[460px]">
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer - Narrow & Optimized -->
+    <footer>
+        <div class="container-site">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-10">
+                <div class="lg:col-span-4 space-y-4">
+                    <span class="footer-logo uppercase">GLYCOPEZIL</span>
+                    <p class="text-[12px] leading-relaxed max-w-xs text-slate-500">
+                        Committed to providing premium quality products and excellent customer support 7 days a week.
+                    </p>
+                    <div class="space-y-0.5">
+                        <p class="text-[8px] uppercase font-bold tracking-widest text-slate-700">Customer Assistance</p>
+                        <p class="text-sm font-bold text-white selection:bg-brand-purple">support@customercs.com</p>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-8">
+                    <div class="fda-text-box text-slate-400">
+                        <p class="italic text-justify">
+                            <strong>FDA Disclaimer:</strong> The statements on this website have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Individual results may vary. Consult your physician before beginning any supplement routine. All trademarks are the property of their respective owners.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-white/5 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+                <nav class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+                    <button onclick="openModal('privacy')" class="footer-nav-link">Privacy Policy</button>
+                    <button onclick="openModal('terms')" class="footer-nav-link">Terms & Conditions</button>
+                    <button onclick="openModal('returns')" class="footer-nav-link">Refund Policy</button>
+                    <button onclick="openModal('shipping')" class="footer-nav-link">Shipping Policy</button>
+                    <button onclick="openModal('contact')" class="footer-nav-link">Contact</button>
+                </nav>
+                <p class="text-[9px] font-bold text-slate-800 uppercase tracking-widest">© 2026 GLYCOPEZIL.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div id="policy-modal" class="fixed inset-0 z-[100] hidden" aria-modal="true" role="dialog">
+        <div class="fixed inset-0 bg-black/80 backdrop-blur-md" onclick="closeModal()"></div>
+        <div class="fixed inset-0 z-10 overflow-y-auto pointer-events-none">
+            <div class="flex min-h-full items-center justify-center p-6">
+                <div class="relative w-full max-w-2xl bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col pointer-events-auto">
+                    <div class="px-6 py-4 border-b border-slate-100 flex justify-between items-center sticky top-0 bg-white">
+                        <h3 class="font-black text-brand-primary uppercase tracking-widest text-xs" id="modal-title">Legal Information</h3>
+                        <button onclick="closeModal()" class="p-2 hover:bg-slate-50 rounded-lg">
+                            <i data-feather="x" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                    <div class="p-8 overflow-y-auto max-h-[70vh] text-sm leading-relaxed text-slate-600 prose" id="modal-content"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        feather.replace();
+
+        const modalData = {
+            privacy: { title: "Privacy Policy", content: "<h4>Privacy Policy</h4><p>We respect your privacy. Data collected is used solely for order processing and internal customer support. We do not sell your personal information to third parties.</p>" },
+            terms: { title: "Terms & Conditions", content: "<h4>Terms and Conditions</h4><p>By using this website, you agree to comply with our terms. Products are dietary supplements and not intended as medical advice.</p>" },
+            returns: { title: "Refund Policy", content: "<h4>60-Day Guarantee</h4><p>Not satisfied? Request a refund within 60 days from the date of purchase. Please use the product for at least 30 days before requesting a refund.</p>" },
+            shipping: { title: "Shipping Policy", content: "<h4>Shipping Policy</h4><p>Orders are processed within 1-3 business days. Delivery times vary by location and carrier volume.</p>" },
+            contact: { title: "Contact Us", content: "<h4>Contact</h4><p>Email: support@customercs.com. Our support team is active 7 days a week to assist you.</p>" }
+        };
+
+        function openModal(type) {
+            const data = modalData[type];
+            document.getElementById('modal-title').innerText = data.title;
+            document.getElementById('modal-content').innerHTML = data.content;
+            document.getElementById('policy-modal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            feather.replace();
+        }
+
+        function closeModal() {
+            document.getElementById('policy-modal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+    </script>
+</body>
+</html>
