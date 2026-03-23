@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18024496202"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-18024496202');
-</script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
@@ -59,7 +50,7 @@
             background-image: 
                 url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),
                 radial-gradient(var(--indigo-brand) 0.5px, transparent 0.5px);
-            background-size: auto, 30px 30px;
+            background-size: auto, 35px 35px;
             opacity: 0.05;
             pointer-events: none;
             z-index: 100;
@@ -86,7 +77,7 @@
             overflow: hidden;
             white-space: nowrap;
             position: relative;
-            padding: 2rem 0;
+            padding: 1.5rem 0;
             background: rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(8px);
             border-top: 1px solid rgba(67, 61, 139, 0.08);
@@ -125,7 +116,7 @@
 
         @keyframes float {
             0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-12px); }
+            50% { transform: translateY(-10px); }
         }
 
         .cta-btn-main {
@@ -183,12 +174,12 @@
 
         .stars-gold { color: #F59E0B; font-size: 0.9rem; letter-spacing: 1.5px; }
 
-        /* Proportion Adjustments for Large Screens */
+        /* Fine-tuned Proportions */
         @media (min-width: 1024px) {
-            .hero-title { font-size: 5rem !important; } /* Scaled down from 8xl/9xl */
-            .hero-copy { font-size: 1.25rem !important; max-width: 32rem !important; }
+            .hero-title { font-size: 4.5rem !important; }
+            .hero-copy { font-size: 1.15rem !important; max-width: 32rem !important; }
             .cta-btn-main, .cta-btn-white { padding: 1.25rem 2rem !important; }
-            .blend-img-desktop { max-width: 480px !important; }
+            .blend-img-desktop { max-width: 440px !important; }
         }
 
         @media (max-width: 768px) {
@@ -196,6 +187,10 @@
             .hero-script { font-size: 1.5rem !important; }
             .badge-naturally { font-size: 1.25rem !important; padding: 0.5rem 1.25rem !important; }
             .blend-img-mobile { max-width: 240px !important; margin: 1.5rem 0; }
+            .cta-text-main { font-size: 1.1rem !important; }
+            .cta-subtext { font-size: 8px !important; }
+            .benefit-card { padding: 0.75rem !important; }
+            .benefit-text { font-size: 11px !important; }
         }
     </style>
 </head>
@@ -231,24 +226,24 @@
                         <span class="bg-indigo-950 text-white font-black badge-naturally px-6 py-2 rounded-xl text-lg lg:text-2xl tracking-widest uppercase shadow-lg inline-block">NATURALLY</span>
                     </div>
 
-                    <!-- PHOTO ON MOBILE -->
-                    <div class="block lg:hidden w-full flex justify-center">
+                    <!-- PHOTO ON MOBILE (Strategic placement) -->
+                    <div class="block lg:hidden w-full flex justify-center mb-6">
                         <img src="images/glycop.png" alt="GlycoPezil Formula" class="blend-img blend-img-mobile" onerror="this.src=''">
                     </div>
 
                     <!-- Benefits List -->
                     <div class="space-y-2.5 mb-8 w-full max-w-sm lg:max-w-md">
-                        <div class="flex items-center gap-3 bg-white/70 p-3 rounded-xl border border-white/50 shadow-sm">
+                        <div class="benefit-card flex items-center gap-3 bg-white/70 p-3 rounded-xl border border-white/50 shadow-sm">
                             <div class="bg-indigo-900 p-1.5 rounded-full text-white"><i data-feather="target" class="w-3.5 h-3.5"></i></div>
-                            <p class="font-bold text-slate-800 text-xs lg:text-sm uppercase tracking-tight text-left">Precision Metabolic Balance Protocol</p>
+                            <p class="benefit-text font-bold text-slate-800 text-xs lg:text-sm uppercase tracking-tight text-left">Precision Metabolic Balance Protocol</p>
                         </div>
-                        <div class="flex items-center gap-3 bg-white/70 p-3 rounded-xl border border-white/50 shadow-sm">
+                        <div class="benefit-card flex items-center gap-3 bg-white/70 p-3 rounded-xl border border-white/50 shadow-sm">
                             <div class="bg-indigo-900 p-1.5 rounded-full text-white"><i data-feather="zap" class="w-3.5 h-3.5"></i></div>
-                            <p class="font-bold text-slate-800 text-xs lg:text-sm uppercase tracking-tight text-left">Elite Bio-Cellular Nutrient Matrix</p>
+                            <p class="benefit-text font-bold text-slate-800 text-xs lg:text-sm uppercase tracking-tight text-left">Elite Bio-Cellular Nutrient Matrix</p>
                         </div>
-                        <div class="flex items-center gap-3 bg-white/70 p-3 rounded-xl border border-white/50 shadow-sm">
+                        <div class="benefit-card flex items-center gap-3 bg-white/70 p-3 rounded-xl border border-white/50 shadow-sm">
                             <div class="bg-indigo-900 p-1.5 rounded-full text-white"><i data-feather="shield" class="w-3.5 h-3.5"></i></div>
-                            <p class="font-bold text-slate-800 text-xs lg:text-sm uppercase tracking-tight text-left">100% Natural Wellness Supremacy</p>
+                            <p class="benefit-text font-bold text-slate-800 text-xs lg:text-sm uppercase tracking-tight text-left">100% Natural Wellness Supremacy</p>
                         </div>
                     </div>
 
@@ -256,23 +251,23 @@
                         Remaster your metabolic freedom. GlycoPezil™ is the premium protocol for those who demand uncompromising vitality in 2026.
                     </p>
 
-                    <!-- CTAs (Proportional Sizes) -->
+                    <!-- CTAs (Requested Link) -->
                     <div class="flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
                         <a href="https://mwebora.com/12000/1227/7/?" class="cta-btn-main text-white px-8 py-4 lg:py-5 rounded-2xl font-black text-center flex flex-col items-center justify-center group">
-                            <span class="text-xl lg:text-2xl uppercase tracking-tighter">Claim Yours Now <i data-feather="shopping-bag" class="inline w-5 h-5 ml-1"></i></span>
-                            <span class="text-[8px] opacity-80 uppercase tracking-widest mt-1">Official Secure Checkout</span>
+                            <span class="cta-text-main text-lg lg:text-2xl uppercase tracking-tighter">Claim Yours Now <i data-feather="shopping-bag" class="inline w-5 h-5 ml-1"></i></span>
+                            <span class="cta-subtext text-[8px] opacity-80 uppercase tracking-widest mt-1">Official Secure Checkout</span>
                         </a>
                         
                         <a href="https://mwebora.com/12000/1227/3/?" class="bg-white/80 border-2 border-indigo-900 text-indigo-950 px-8 py-4 lg:py-5 rounded-2xl font-black text-center flex flex-col items-center justify-center transition-all hover:bg-white shadow-sm">
-                            <span class="text-xl lg:text-2xl uppercase tracking-tighter">Watch Video <i data-feather="play-circle" class="inline w-5 h-5 ml-1"></i></span>
-                            <span class="text-[8px] text-slate-500 uppercase tracking-widest mt-1">Exclusive Presentation</span>
+                            <span class="cta-text-main text-lg lg:text-2xl uppercase tracking-tighter">Watch Video <i data-feather="play-circle" class="inline w-5 h-5 ml-1"></i></span>
+                            <span class="cta-subtext text-[8px] text-slate-500 uppercase tracking-widest mt-1">Exclusive Presentation</span>
                         </a>
                     </div>
                 </div>
 
                 <!-- PHOTO ON DESKTOP -->
                 <div class="hidden lg:flex lg:col-span-5 justify-center order-1 lg:order-2">
-                    <img src="images/glycop.png" alt="GlycoPezil Official" class="blend-img blend-img-desktop w-full lg:max-w-[450px]" onerror="this.src=''">
+                    <img src="images/glycop.png" alt="GlycoPezil Official" class="blend-img blend-img-desktop w-full lg:max-w-[420px]" onerror="this.src=''">
                 </div>
 
             </div>
@@ -383,8 +378,8 @@
 
             <div class="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center gap-10 text-[9px] font-black uppercase tracking-widest">
                 <nav class="flex gap-8">
-                    <button onclick="openModal('privacy')" class="hover:text-indigo-400 transition-colors">Privacy</button>
-                    <button onclick="openModal('terms')" class="hover:text-indigo-400 transition-colors">Terms</button>
+                    <button onclick="openModal('privacy')" class="hover:text-indigo-400 transition-colors">Privacy Policy</button>
+                    <button onclick="openModal('terms')" class="hover:text-indigo-400 transition-colors">Terms of Use</button>
                     <button onclick="openModal('returns')" class="hover:text-indigo-400 transition-colors">Guarantee</button>
                 </nav>
                 
