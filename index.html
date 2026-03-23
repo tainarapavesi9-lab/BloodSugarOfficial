@@ -42,7 +42,7 @@
             position: relative;
         }
 
-        /* Premium Layered Background Texture */
+        /* Layered Premium Textures */
         body::before {
             content: "";
             position: fixed;
@@ -77,7 +77,7 @@
             overflow: hidden;
             white-space: nowrap;
             position: relative;
-            padding: 1.5rem 0;
+            padding: 2rem 0;
             background: rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(8px);
             border-top: 1px solid rgba(67, 61, 139, 0.08);
@@ -87,19 +87,19 @@
         .marquee-content {
             display: inline-flex;
             gap: 1.5rem;
-            animation: scroll 60s linear infinite;
+            animation: scroll 50s linear infinite;
             width: max-content;
         }
 
         .review-card {
             background: #FFFFFF;
-            padding: 1.25rem;
-            border-radius: 1.25rem;
-            width: 280px;
-            min-width: 280px;
+            padding: 1.5rem;
+            border-radius: 1.5rem;
+            width: 300px;
+            min-width: 300px;
             white-space: normal;
             border: 1px solid rgba(67, 61, 139, 0.05);
-            box-shadow: 0 10px 25px -5px rgba(23, 21, 59, 0.02);
+            box-shadow: 0 10px 25px -5px rgba(23, 21, 59, 0.03);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -123,28 +123,30 @@
             background: linear-gradient(135deg, var(--midnight) 0%, var(--indigo-brand) 100%);
             transition: all 0.3s ease;
             box-shadow: 0 10px 20px -5px rgba(67, 61, 139, 0.3);
+            width: 100%;
+            max-width: 400px;
         }
         .cta-btn-main:hover {
             transform: translateY(-2px);
-            box-shadow: 0 15px 30px -8px rgba(67, 61, 139, 0.4);
+            box-shadow: 0 15px 35px -8px rgba(67, 61, 139, 0.4);
         }
 
         .faq-item {
             background: white;
             border: 1px solid rgba(67, 61, 139, 0.05);
-            border-radius: 1rem;
+            border-radius: 1.25rem;
             margin-bottom: 0.75rem;
             transition: all 0.3s ease;
         }
         .faq-question {
             cursor: pointer;
-            padding: 1rem 1.5rem;
+            padding: 1.25rem 1.5rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
             font-weight: 700;
             color: var(--midnight);
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             text-transform: uppercase;
         }
         .faq-answer {
@@ -154,43 +156,40 @@
             color: #64748B;
             padding: 0 1.5rem;
             font-size: 0.85rem;
-            line-height: 1.5;
+            line-height: 1.6;
         }
         .faq-item.active .faq-answer {
             max-height: 400px;
-            padding-bottom: 1.25rem;
+            padding-bottom: 1.5rem;
         }
         .faq-item.active .faq-icon { transform: rotate(45deg); color: var(--indigo-brand); }
 
         .verified-badge {
             background: #F1F5F9;
             color: #475569;
-            padding: 4px 8px;
+            padding: 4px 10px;
             border-radius: 99px;
-            font-size: 8px;
+            font-size: 9px;
             font-weight: 800;
             text-transform: uppercase;
         }
 
-        .stars-gold { color: #F59E0B; font-size: 0.9rem; letter-spacing: 1.5px; }
+        .stars-gold { color: #F59E0B; font-size: 1rem; letter-spacing: 1.5px; }
 
-        /* Fine-tuned Proportions */
         @media (min-width: 1024px) {
             .hero-title { font-size: 4.5rem !important; }
             .hero-copy { font-size: 1.15rem !important; max-width: 32rem !important; }
-            .cta-btn-main, .cta-btn-white { padding: 1.25rem 2rem !important; }
+            .cta-btn-main { padding: 1.25rem 2rem !important; width: auto !important; min-width: 350px; }
             .blend-img-desktop { max-width: 440px !important; }
         }
 
         @media (max-width: 768px) {
-            .hero-title { font-size: 2.5rem !important; line-height: 1.1; }
+            .hero-title { font-size: 2.75rem !important; line-height: 1.1; }
             .hero-script { font-size: 1.5rem !important; }
             .badge-naturally { font-size: 1.25rem !important; padding: 0.5rem 1.25rem !important; }
-            .blend-img-mobile { max-width: 240px !important; margin: 1.5rem 0; }
+            .blend-img-mobile { max-width: 260px !important; margin: 1.5rem 0; }
             .cta-text-main { font-size: 1.1rem !important; }
             .cta-subtext { font-size: 8px !important; }
-            .benefit-card { padding: 0.75rem !important; }
-            .benefit-text { font-size: 11px !important; }
         }
     </style>
 </head>
@@ -226,41 +225,36 @@
                         <span class="bg-indigo-950 text-white font-black badge-naturally px-6 py-2 rounded-xl text-lg lg:text-2xl tracking-widest uppercase shadow-lg inline-block">NATURALLY</span>
                     </div>
 
-                    <!-- PHOTO ON MOBILE (Strategic placement) -->
+                    <!-- PHOTO ON MOBILE -->
                     <div class="block lg:hidden w-full flex justify-center mb-6">
                         <img src="images/glycop.png" alt="GlycoPezil Formula" class="blend-img blend-img-mobile" onerror="this.src=''">
                     </div>
 
                     <!-- Benefits List -->
                     <div class="space-y-2.5 mb-8 w-full max-w-sm lg:max-w-md">
-                        <div class="benefit-card flex items-center gap-3 bg-white/70 p-3 rounded-xl border border-white/50 shadow-sm">
+                        <div class="flex items-center gap-3 bg-white/70 p-3 rounded-xl border border-white/50 shadow-sm">
                             <div class="bg-indigo-900 p-1.5 rounded-full text-white"><i data-feather="target" class="w-3.5 h-3.5"></i></div>
-                            <p class="benefit-text font-bold text-slate-800 text-xs lg:text-sm uppercase tracking-tight text-left">Precision Metabolic Balance Protocol</p>
+                            <p class="font-bold text-slate-800 text-xs lg:text-sm uppercase tracking-tight text-left">Precision Metabolic Balance Protocol</p>
                         </div>
-                        <div class="benefit-card flex items-center gap-3 bg-white/70 p-3 rounded-xl border border-white/50 shadow-sm">
+                        <div class="flex items-center gap-3 bg-white/70 p-3 rounded-xl border border-white/50 shadow-sm">
                             <div class="bg-indigo-900 p-1.5 rounded-full text-white"><i data-feather="zap" class="w-3.5 h-3.5"></i></div>
-                            <p class="benefit-text font-bold text-slate-800 text-xs lg:text-sm uppercase tracking-tight text-left">Elite Bio-Cellular Nutrient Matrix</p>
+                            <p class="font-bold text-slate-800 text-xs lg:text-sm uppercase tracking-tight text-left">Elite Bio-Cellular Nutrient Matrix</p>
                         </div>
-                        <div class="benefit-card flex items-center gap-3 bg-white/70 p-3 rounded-xl border border-white/50 shadow-sm">
+                        <div class="flex items-center gap-3 bg-white/70 p-3 rounded-xl border border-white/50 shadow-sm">
                             <div class="bg-indigo-900 p-1.5 rounded-full text-white"><i data-feather="shield" class="w-3.5 h-3.5"></i></div>
-                            <p class="benefit-text font-bold text-slate-800 text-xs lg:text-sm uppercase tracking-tight text-left">100% Natural Wellness Supremacy</p>
+                            <p class="font-bold text-slate-800 text-xs lg:text-sm uppercase tracking-tight text-left">100% Natural Wellness Supremacy</p>
                         </div>
                     </div>
 
-                    <p class="hero-copy text-lg lg:text-xl text-slate-700 mb-8 lg:mb-10 leading-relaxed max-w-lg font-bold italic border-l-4 border-indigo-500 pl-6">
-                        Remaster your metabolic freedom. GlycoPezil™ is the premium protocol for those who demand uncompromising vitality in 2026.
+                    <p class="hero-copy text-lg lg:text-xl text-slate-700 mb-8 lg:mb-10 leading-relaxed max-w-lg font-bold italic border-l-4 border-indigo-500 pl-6 text-left">
+                        REMASTER YOUR METABOLIC FREEDOM. GlycoPezil™ is the premium protocol for those who demand uncompromising vitality in 2026.
                     </p>
 
-                    <!-- CTAs (Requested Link) -->
-                    <div class="flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
-                        <a href="https://mwebora.com/12000/1227/7/?" class="cta-btn-main text-white px-8 py-4 lg:py-5 rounded-2xl font-black text-center flex flex-col items-center justify-center group">
-                            <span class="cta-text-main text-lg lg:text-2xl uppercase tracking-tighter">Claim Yours Now <i data-feather="shopping-bag" class="inline w-5 h-5 ml-1"></i></span>
+                    <!-- CTAs (Single Primary Button) -->
+                    <div class="flex flex-col items-center lg:items-start w-full">
+                        <a href="https://mwebora.com/12000/1227/7/?" class="cta-btn-main text-white px-8 py-5 lg:px-12 lg:py-6 rounded-2xl font-black text-center flex flex-col items-center justify-center group">
+                            <span class="cta-text-main text-xl lg:text-2xl uppercase tracking-tighter">Claim Yours Now <i data-feather="shopping-bag" class="inline w-5 h-5 ml-1"></i></span>
                             <span class="cta-subtext text-[8px] opacity-80 uppercase tracking-widest mt-1">Official Secure Checkout</span>
-                        </a>
-                        
-                        <a href="https://mwebora.com/12000/1227/3/?" class="bg-white/80 border-2 border-indigo-900 text-indigo-950 px-8 py-4 lg:py-5 rounded-2xl font-black text-center flex flex-col items-center justify-center transition-all hover:bg-white shadow-sm">
-                            <span class="cta-text-main text-lg lg:text-2xl uppercase tracking-tighter">Watch Video <i data-feather="play-circle" class="inline w-5 h-5 ml-1"></i></span>
-                            <span class="cta-subtext text-[8px] text-slate-500 uppercase tracking-widest mt-1">Exclusive Presentation</span>
                         </a>
                     </div>
                 </div>
@@ -313,7 +307,7 @@
             </div>
         </section>
 
-        <!-- FAQ SECTION -->
+        <!-- FAQ SECTION (5 Questions) -->
         <section class="py-16 bg-white/40">
             <div class="max-w-2xl mx-auto px-6">
                 <div class="text-center mb-10">
@@ -328,25 +322,43 @@
                             <i data-feather="plus" class="faq-icon w-4 h-4 text-slate-400"></i>
                         </div>
                         <div class="faq-answer">
-                            For optimal results, take one serving daily with a full glass of water, ideally 20 to 30 minutes before your first meal.
+                            For optimal results, take one serving daily with a full glass of water, ideally 20 to 30 minutes before your first meal of the day.
                         </div>
                     </div>
                     <div class="faq-item" onclick="toggleFaq(this)">
                         <div class="faq-question">
-                            <span>Does the product have a guarantee?</span>
+                            <span>Is there a money-back guarantee?</span>
                             <i data-feather="plus" class="faq-icon w-4 h-4 text-slate-400"></i>
                         </div>
                         <div class="faq-answer">
-                            Yes. We protect your decision with an ironclad 60-Day Money-Back Guarantee. If you are not 100% satisfied, we refund your investment.
+                            Yes. We protect your decision with an ironclad 60-Day Money-Back Guarantee. If you are not 100% satisfied with your results, we refund your investment—no questions asked.
                         </div>
                     </div>
                     <div class="faq-item" onclick="toggleFaq(this)">
                         <div class="faq-question">
-                            <span>Are the ingredients safe?</span>
+                            <span>Are the ingredients clinical-grade?</span>
                             <i data-feather="plus" class="faq-icon w-4 h-4 text-slate-400"></i>
                         </div>
                         <div class="faq-answer">
-                            Absolutely. Our formula consists of 100% natural, clinical-grade ingredients produced in a sterile facility in the USA.
+                            Absolutely. Our formula consists of 100% natural, clinical-grade ingredients produced in a sterile facility in the USA following rigid quality standards.
+                        </div>
+                    </div>
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span>How long does domestic shipping take?</span>
+                            <i data-feather="plus" class="faq-icon w-4 h-4 text-slate-400"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Orders are processed within 24 hours. Domestic US shipping typically takes 3 to 5 business days via tracked carriers like USPS or UPS.
+                        </div>
+                    </div>
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <span>Is this a one-time payment?</span>
+                            <i data-feather="plus" class="faq-icon w-4 h-4 text-slate-400"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Yes, your order today is a one-time payment with no hidden charges or subscriptions. You will only be billed for what you order today.
                         </div>
                     </div>
                 </div>
@@ -364,8 +376,8 @@
                         Pioneering metabolic freedom through elite natural science. Dedicated to your long-term vitality.
                     </p>
                     <div class="space-y-1">
-                        <div class="text-[9px] font-black uppercase text-slate-800 tracking-widest">Support</div>
-                        <p class="text-white font-black text-base uppercase">support@customercs.com</p>
+                        <div class="text-[9px] font-black uppercase text-slate-800 tracking-widest text-left">Support</div>
+                        <p class="text-white font-black text-base uppercase text-left">support@customercs.com</p>
                     </div>
                 </div>
 
@@ -377,10 +389,11 @@
             </div>
 
             <div class="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center gap-10 text-[9px] font-black uppercase tracking-widest">
-                <nav class="flex gap-8">
+                <nav class="flex gap-10">
                     <button onclick="openModal('privacy')" class="hover:text-indigo-400 transition-colors">Privacy Policy</button>
                     <button onclick="openModal('terms')" class="hover:text-indigo-400 transition-colors">Terms of Use</button>
                     <button onclick="openModal('returns')" class="hover:text-indigo-400 transition-colors">Guarantee</button>
+                    <button onclick="openModal('contact')" class="hover:text-indigo-400 transition-colors">Contact</button>
                 </nav>
                 
                 <div class="flex flex-col items-center md:items-end gap-1">
@@ -396,9 +409,9 @@
         <div class="fixed inset-0 bg-slate-950/90 backdrop-blur-3xl" onclick="closeModal()"></div>
         <div class="fixed inset-0 flex items-center justify-center p-4">
             <div class="bg-white w-full max-w-sm rounded-2xl overflow-hidden relative shadow-2xl">
-                <div class="p-6 border-b border-slate-100 flex justify-between items-center bg-slate-50">
+                <div class="px-6 border-b border-slate-100 flex justify-between items-center bg-slate-50">
                     <h3 class="font-bold text-slate-900 text-lg uppercase" id="modal-title">Policy</h3>
-                    <button onclick="closeModal()"><i data-feather="x" class="w-5 h-5 text-slate-400"></i></button>
+                    <button onclick="closeModal()" class="p-4"><i data-feather="x" class="w-5 h-5 text-slate-400"></i></button>
                 </div>
                 <div class="p-6 max-h-[40vh] overflow-y-auto text-[10px] font-bold text-slate-600 leading-relaxed uppercase" id="modal-content"></div>
             </div>
@@ -417,7 +430,8 @@
         const modalData = {
             privacy: { title: "Privacy Policy", content: "Your data is protected by industry-standard encryption and used solely for order processing and official communication." },
             terms: { title: "Terms of Use", content: "By purchasing our products, you agree to our responsible use guidelines and legal terms of sale." },
-            returns: { title: "Refund Policy", content: "We guarantee a 100% refund of your investment within 60 days if you are not fully satisfied with your results." }
+            returns: { title: "Refund Policy", content: "We guarantee a 100% refund of your investment within 60 days if you are not fully satisfied with your results." },
+            contact: { title: "Contact Us", content: "Our support center is available 24/7 at support@customercs.com to assist with your order." }
         };
 
         function openModal(type) {
